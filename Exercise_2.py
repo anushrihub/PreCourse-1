@@ -9,6 +9,7 @@ class Stack:
         self.current_node = None
         self.previous_node = None
 
+# push is working 
     def push(self, data):
         if self.current_node:
             self.previous_node = self.current_node
@@ -18,14 +19,13 @@ class Stack:
         if self.previous_node:
             self.previous_node.next = self.current_node
 
-        
+# pop is not working   
     def pop(self):
         if self.current_node:
             popped = self.current_node
             print(self.previous_node.data)
             if self.previous_node:
                 self.current_node = self.previous_node
-                self.previous_node = None
             else:
                 self.current_node = None
             return popped.data
