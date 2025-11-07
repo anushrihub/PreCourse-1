@@ -1,7 +1,8 @@
 
-# // Did this code successfully run on Leetcode : Yes on Geeksforgeeks
-# // Any problem you faced while coding this : Yes
-
+# Time Complexity : O(1)
+# Space Complexity : O(n)
+# Did this code successfully run on Leetcode : Yes on Geeksforgeeks
+# Any problem you faced while coding this : No
 
 # // Your code here along with comments explaining your approach
 
