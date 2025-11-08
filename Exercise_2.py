@@ -1,8 +1,8 @@
 
 class Node:
-    def __init__(self, data):
+    def __init__(self, data, next):
        self.data = data
-       self.next = None
+       self.next = next
  
 class Stack:
     def __init__(self):
@@ -11,18 +11,20 @@ class Stack:
     # push is working 
     def push(self, data):
         new_node = Node(data)
-        # new node is an object and it contains the data
-
+        # if there is something in the stack 
         if self.top:
-        # if there is something in the stack new_node's pointer will point to that top
+        # new_node's pointer will point to that top
             new_node.next = self.top
         # if there is nothing already then new node become top
         self.top = new_node
 
     # pop is working   
     def pop(self):
+        # if top is present
         if self.top:
+            # popped the top and store into the popped variable
             popped = self.top
+            # link the top to the next pointer of the popped 
             self.top = popped.next
             return popped.data
         return None
