@@ -6,33 +6,30 @@ class Node:
  
 class Stack:
     def __init__(self):
-        self.current_node = None
-        self.previous_node = None
+        self.top = None
 
-# push is working 
+    # push is working 
     def push(self, data):
-        if self.current_node:
-            self.previous_node = self.current_node
-        
-        self.current_node = Node(data)
+        new_node = Node(data)
+        # new node is an object and it contains the data
 
-        if self.previous_node:
-            self.previous_node.next = self.current_node
+        if self.top:
+        # if there is something in the stack new_node's pointer will point to that top
+            new_node.next = self.top
+        # if there is nothing already then new node become top
+        self.top = new_node
 
-# pop is not working   
+    # pop is working   
     def pop(self):
-        if self.current_node:
-            popped = self.current_node
-            print(self.previous_node.data)
-            if self.previous_node:
-                self.current_node = self.previous_node
-            else:
-                self.current_node = None
+        if self.top:
+            popped = self.top
+            self.top = popped.next
             return popped.data
         return None
 
         
 a_stack = Stack()
+
 while True:
     #Give input as string if getting an EOF error. Give input like "push 10" or "pop"
     print('push <value>')
