@@ -1,4 +1,7 @@
-
+# Time Complexity : O(1)
+# Space Complexity : O(n)
+# Did this code successfully run on Leetcode : Yes on Geeksforgeeks
+# Any problem you faced while coding this : I faced difficulty while writing a logic for append and find
 class Node:
     def __init__(self, data, next):
        self.data = data
@@ -8,7 +11,6 @@ class Stack:
     def __init__(self):
         self.top = None
 
-    # push is working 
     def push(self, data):
         new_node = Node(data)
         # if there is something in the stack 
@@ -18,7 +20,6 @@ class Stack:
         # if there is nothing already then new node become top
         self.top = new_node
 
-    # pop is working   
     def pop(self):
         # if top is present
         if self.top:
