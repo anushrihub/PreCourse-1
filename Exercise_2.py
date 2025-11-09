@@ -3,9 +3,9 @@
 # Did this code successfully run on Leetcode : Yes on Geeksforgeeks
 # Any problem you faced while coding this : I faced difficulty while writing a logic for append and find
 class Node:
-    def __init__(self, data, next):
+    def __init__(self, data):
        self.data = data
-       self.next = next
+       self.next = None
  
 class Stack:
     def __init__(self):
