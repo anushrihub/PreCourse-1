@@ -1,7 +1,7 @@
 # Time Complexity : O(n)
 # Space Complexity : O(n)
-# Did this code successfully run on Leetcode : Yes on Geeksforgeeks
-# Any problem you faced while coding this : I faced difficulty while writing a logic for append and find
+# Did this code successfully run on Leetcode : No. Could not find the problem
+# Any problem you faced while coding this : Faced difficulty while writing a logic for append and find
 class ListNode:
     """
     A node in a singly-linked list.
