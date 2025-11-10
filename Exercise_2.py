@@ -1,7 +1,7 @@
 # Time Complexity : O(1)
 # Space Complexity : O(n)
 # Did this code successfully run on Leetcode : Yes on Geeksforgeeks
-# Any problem you faced while coding this : I faced difficulty while writing a logic for append and find
+# Any problem you faced while coding this : Faced difficulty while writing a logic for pop
 class Node:
     def __init__(self, data):
        self.data = data
